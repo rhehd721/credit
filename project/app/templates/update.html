@@ -1,0 +1,6 @@
+<form method = "POST" action ="">
+    {% csrf_token %}
+   {{credit_form.as_p}}
+   <a href="{% url 'update' credits.id %}"><button>수정</button></a>
+</form>
+
